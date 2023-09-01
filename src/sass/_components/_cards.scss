@@ -1,0 +1,31 @@
+.plan {
+    &.card {
+        background-color: var(--color-white);
+        box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        padding: 1.19em;
+        text-align: center;
+        margin-top: -4.06em;
+
+        .icon {
+            max-width: 84px;
+            margin: 0 auto;
+            margin-top: calc(-42px - 1.19em);
+            margin-bottom: 1.8em;
+        }
+
+        .services {
+            text-align: left;
+            li {
+                font-size: 15px;
+                margin-left: 1.19em;
+                padding-left: 0.5em;
+                margin-bottom: 1.3em;
+                &::marker {
+                    content: url(../assets/icons/icon-tick-yellow.svg);
+                    width: 25px;
+                }
+            }
+        }
+    }
+}

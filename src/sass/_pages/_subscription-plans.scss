@@ -2,4 +2,34 @@
     .logo-wrapper {
         max-width: 200px;
     }
+
+    .hero {
+        min-height: 402px;
+        background-image: url(../assets/images/hero-banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #404040;
+        background-blend-mode: soft-light;
+        padding-top: 7.63em;
+
+        .fs-hero-title {
+            max-width: 950px;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--color-white);
+            line-height: 49.275px;
+        }
+    }
+
+    .plan-options {
+        display: flex;
+        gap: 30px;
+        align-items:flex-start;
+        // align-content:flex-start;
+        .plan {
+            flex-basis: calc(100% / 3);
+        }
+    }
 }
