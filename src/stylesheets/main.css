@@ -201,34 +201,6 @@ html {
   line-height: var(--lh-200);
 }
 
-.fw-light {
-  font-weight: var(--fw-light);
-}
-
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-
-.fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
-}
-
-.fw-bold {
-  font-weight: var(--fw-bold);
-}
-
-.text-underline {
-  text-decoration: underline;
-}
-
-.fs-hero-title {
-  font-size: var(--fs-hero-title);
-}
-
-.lh-200 {
-  line-height: var(--lh-200);
-}
-
 .plan {
   margin-bottom: 5em;
   margin-top: -4.06em;

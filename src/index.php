@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./stylesheets/main.css">
     <!-- tailwind compiled css -->
     <link rel="stylesheet" href="./stylesheets/tailwind.css">
+    <!-- animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <main>
             <section class="hero mt-4">
                 <div class="wrapper">
-                    <h1 class="fs-hero-title fw-semi-bold">Elevate your <span class="text-primary">shopping experience</span> with our exclusive <span class="text-primary">Prime Subscription!</span> </h1>
+                    <h1 class="fs-hero-title fw-semi-bold animate__animated animate__fadeInUp">Elevate your <span class="text-primary">shopping experience</span> with our exclusive <span class="text-primary">Prime Subscription!</span> </h1>
                 </div>
             </section>
 
@@ -34,7 +36,7 @@
 
                     <!-- <ul class="plan-options grid grid-cols-3 gap-4 mx-8"> -->
                     <ul class="plan-options">
-                        <li class="plan card monthly">
+                        <li class="plan card monthly animate__animated animate__fadeInUp animate__fast">
                             <div class="icon">
                                 <img src="./assets/icons/icon-monthly.svg" alt="">
                             </div>
@@ -46,7 +48,7 @@
                             </ul>
                             <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md">Buy Plan</button>
                         </li>
-                        <li class="plan card quarterly">
+                        <li class="plan card quarterly animate__animated animate__fadeInUp animate__slow">
                             <div class="icon">
                                 <img src="./assets/icons/icon-quarterly.svg" alt="">
                             </div>
@@ -62,7 +64,7 @@
                                 Buy Plan
                             </button> -->
                         </li>
-                        <li class="plan card yearly">
+                        <li class="plan card yearly animate__animated animate__fadeInUp animate__slower">
                             <div class="icon">
                                 <img src="./assets/icons/icon-yearly.svg" alt="">
                             </div>
