@@ -1,35 +1,75 @@
+@use "../_partials/mixins";
 .subscription-plans {
+  .logo-wrapper {
+    max-width: 110px;
+  }
+
+  .hero {
+    min-height: 402px;
+    background-image: url(../assets/images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: #404040;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: soft-light;
+    padding-top: 7.63em;
+
+    .fs-hero-title {
+      max-width: 950px;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--color-white);
+      line-height: 49.275px;
+    }
+  }
+
+  @include mixins.maxmq(50em) {
     .logo-wrapper {
-        max-width: 200px;
+      max-width: 90px;
     }
-
     .hero {
-        min-height: 402px;
-        background-image: url(../assets/images/hero-banner.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #404040;
-        background-blend-mode: soft-light;
-        padding-top: 7.63em;
+      .fs-hero-title {
+        line-height: 35px;
+      }
+    }
+  }
 
-        .fs-hero-title {
-            max-width: 950px;
-            margin: 0 auto;
-            text-align: center;
-            text-transform: uppercase;
-            color: var(--color-white);
-            line-height: 49.275px;
-        }
+  .plan-options {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    // align-content:flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    .plan {
+      flex-basis: calc(100% / 3);
     }
 
-    .plan-options {
-        display: flex;
-        gap: 30px;
-        align-items:flex-start;
-        // align-content:flex-start;
-        .plan {
-            flex-basis: calc(100% / 3);
-        }
+    @include mixins.maxmq(50em) {
+      display: block;
+      .plan {
+        margin-bottom: 5em;
+      }
     }
+  }
+
+  aside {
+    background-color: #424242;
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 24px;
+    font-weight: 400;
+    @include mixins.maxmq(50em) {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+
+  .vertical-spacer {
+    padding: 4em;
+  }
 }

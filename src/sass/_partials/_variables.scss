@@ -1,50 +1,53 @@
 :root {
-    /* COLORS */
-    --color-primary: #ffbb37;
-    --color-secondary: #3A8C13;
-    --color-text: #333333;
-    --color-white: #ffffff;
+  /* COLORS */
+  --color-primary: #ffbb37;
+  --color-secondary: #3a8c13;
+  --color-text: #333333;
+  --color-white: #ffffff;
 
-    /* TYPOGRAPHY */
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
-    --ff-primary: "Poppins", sans-serif;
-    --ff-body: var(--ff-primary);
+  /* TYPOGRAPHY */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+  --ff-primary: "Poppins", sans-serif;
+  --ff-body: var(--ff-primary);
 
-    // --fs-body: 24px;
+  // --fs-body: 24px;
 
-    --fs-hero-title: 2.5rem; //40px;
-    --fs-plan-card-title: 1.25rem; //20px;
-    --fs-plan-card-tagline: 1.5rem; //24px;
-    --fs-50: 0.88rem; //14px;
+  --fs-hero-title: 2.5rem; //40px;
+  --fs-plan-card-title: 1.25rem; //20px;
+  --fs-plan-card-tagline: 1.5rem; //24px;
+  --fs-50: 0.88rem; //14px;
 
-    /* SIZES */
-    --size-50: 1.88em; //30px;
-    --size-100: 2.63em; //42px;
-    --size-250: 3.81em; //61px;
-    --size-300: 4.88em; //78px;
-    --size-500: 6.25em; //100px;
+  /* SIZES */
+  --size-50: 1.88em; //30px;
+  --size-100: 2.63em; //42px;
+  --size-250: 3.81em; //61px;
+  --size-300: 4.88em; //78px;
+  --size-500: 6.25em; //100px;
 
-    /* FONT WEIGHT */
-    --fw-light: 400;
-    --fw-regular: 600;
-    --fw-semi-bold: 700;
-    --fw-bold: 900;
+  /* FONT WEIGHT */
+  --fw-light: 400;
+  --fw-regular: 600;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
 
-    /* LINE HEIGHT*/
-    --lh-200: 60px;
+  /* LINE HEIGHT*/
+  --lh-200: 60px;
 }
 @media (max-width: 50em) {
-    :root {
-        /* TYPOGRAPHY */
+  :root {
+    /* TYPOGRAPHY */
 
-        /* SIZES */
-        --size-50: 1em; //16px;
-        --size-100: 1.38em; //22px;
-        --size-250: 2.5em; //40px;
-        --size-300: 3.44em; //55px;
-        --size-500: 5em; //80px;
+    /* SIZES */
+  --fs-hero-title: 1.56rem; //25px;
+  line-height: 35px;
 
-        /* LINE HEIGHT*/
-        --lh-200: 35px;
-    }
+    --size-50: 1em; //16px;
+    --size-100: 1.38em; //22px;
+    --size-250: 2.5em; //40px;
+    --size-300: 3.44em; //55px;
+    --size-500: 5em; //80px;
+
+    /* LINE HEIGHT*/
+    --lh-200: 35px;
+  }
 }

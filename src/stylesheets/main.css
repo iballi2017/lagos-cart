@@ -9,7 +9,7 @@
 :root {
   /* COLORS */
   --color-primary: #ffbb37;
-  --color-secondary: #3A8C13;
+  --color-secondary: #3a8c13;
   --color-text: #333333;
   --color-white: #ffffff;
   /* TYPOGRAPHY */
@@ -39,6 +39,8 @@
   :root {
     /* TYPOGRAPHY */
     /* SIZES */
+    --fs-hero-title: 1.56rem;
+    line-height: 35px;
     --size-50: 1em;
     --size-100: 1.38em;
     --size-250: 2.5em;
@@ -103,10 +105,9 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -138,6 +139,10 @@ html {
 
 .fs-hero-title {
   font-size: var(--fs-hero-title);
+}
+
+.text-white {
+  color: var(--color-white);
 }
 
 .text-primary {
@@ -224,13 +229,28 @@ html {
   line-height: var(--lh-200);
 }
 
+.plan {
+  margin-bottom: 5em;
+  margin-top: -4.06em;
+}
 .plan.card {
   background-color: var(--color-white);
   box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
-  padding: 1.19em;
+  padding: 1.19em 1.19em 3.15em 1.19em;
   text-align: center;
-  margin-top: -4.06em;
+}
+.plan.card.monthly, .plan.card.quarterly, .plan.card.yearly {
+  border-top-width: 7px;
+}
+.plan.card.monthly {
+  border-top-color: #a68037;
+}
+.plan.card.quarterly {
+  border-top-color: #9c9c9c;
+}
+.plan.card.yearly {
+  border-top-color: #efad2d;
 }
 .plan.card .icon {
   max-width: 84px;
@@ -245,22 +265,35 @@ html {
   font-size: 15px;
   margin-left: 1.19em;
   padding-left: 0.5em;
-  margin-bottom: 1.3em;
+  margin-bottom: 1.5em;
 }
 .plan.card .services li::marker {
   content: url(../assets/icons/icon-tick-yellow.svg);
   width: 25px;
 }
+.plan.card .services li:last-child {
+  margin-bottom: 1.8em;
+}
+.plan.card button {
+  font-weight: 500;
+}
+@media (max-width: 50em) {
+  .plan {
+    margin-top: 4em;
+  }
+  .plan.card {
+    line-height: 25px;
+  }
+}
 
-.container {
-  max-width: 1440px;
+.wrapper {
   margin: 0 auto;
   padding-right: 15px;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .subscription-plans .logo-wrapper {
-  max-width: 200px;
+  max-width: 110px;
 }
 .subscription-plans .hero {
   min-height: 402px;
@@ -268,7 +301,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #404040;
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: soft-light;
   padding-top: 7.63em;
 }
@@ -280,13 +313,49 @@ html {
   color: var(--color-white);
   line-height: 49.275px;
 }
+@media (max-width: 50em) {
+  .subscription-plans .logo-wrapper {
+    max-width: 90px;
+  }
+  .subscription-plans .hero .fs-hero-title {
+    line-height: 35px;
+  }
+}
 .subscription-plans .plan-options {
   display: flex;
   gap: 30px;
   align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .subscription-plans .plan-options .plan {
   flex-basis: 33.3333333333%;
+}
+@media (max-width: 50em) {
+  .subscription-plans .plan-options {
+    display: block;
+  }
+  .subscription-plans .plan-options .plan {
+    margin-bottom: 5em;
+  }
+}
+.subscription-plans aside {
+  background-color: #424242;
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 50em) {
+  .subscription-plans aside {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+.subscription-plans .vertical-spacer {
+  padding: 4em;
 }
 
 /*# sourceMappingURL=main.css.map */

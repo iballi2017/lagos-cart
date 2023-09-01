@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js,css,php}"],
   theme: {
+    container: {
+      padding: '15px',
+      margin: 'auto'
+    },
+    btn:{
+      padding: ".4em"
+    },
     colors: {
       // Configure your color palette here
       // transparent: 'transparent',

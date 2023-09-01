@@ -1,31 +1,65 @@
+@use "../_partials/mixins";
 .plan {
-    &.card {
-        background-color: var(--color-white);
-        box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.09);
-        border-radius: 10px;
-        padding: 1.19em;
-        text-align: center;
-        margin-top: -4.06em;
-
-        .icon {
-            max-width: 84px;
-            margin: 0 auto;
-            margin-top: calc(-42px - 1.19em);
-            margin-bottom: 1.8em;
-        }
-
-        .services {
-            text-align: left;
-            li {
-                font-size: 15px;
-                margin-left: 1.19em;
-                padding-left: 0.5em;
-                margin-bottom: 1.3em;
-                &::marker {
-                    content: url(../assets/icons/icon-tick-yellow.svg);
-                    width: 25px;
-                }
-            }
-        }
+  margin-bottom: 5em;
+  margin-top: -4.06em;
+  &.card {
+    background-color: var(--color-white);
+    box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 1.19em 1.19em 3.15em 1.19em;
+    text-align: center;
+    &.monthly,
+    &.quarterly,
+    &.yearly {
+      border-top-width: 7px;
     }
+
+    &.monthly {
+      border-top-color: #a68037;
+    }
+
+    &.quarterly {
+      border-top-color: #9c9c9c;
+    }
+
+    &.yearly {
+      border-top-color: #efad2d;
+    }
+
+    .icon {
+      max-width: 84px;
+      margin: 0 auto;
+      margin-top: calc(-42px - 1.19em);
+      margin-bottom: 1.8em;
+    }
+
+    .services {
+      text-align: left;
+      li {
+        font-size: 15px;
+        margin-left: 1.19em;
+        padding-left: 0.5em;
+        margin-bottom: 1.5em;
+        &::marker {
+          content: url(../assets/icons/icon-tick-yellow.svg);
+          width: 25px;
+        }
+        &:last-child {
+          margin-bottom: 1.8em;
+        }
+      }
+    }
+
+    button {
+      font-weight: 500;
+    }
+
+    
+  }
+  @include mixins.maxmq(50em){
+    margin-top: 4em;
+    &.card{
+        line-height: 25px;
+    }
+  }
 }
