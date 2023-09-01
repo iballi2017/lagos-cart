@@ -340,4 +340,8 @@ html {
   line-height: var(--lh-200);
 }
 
+.subscription-plans .logo-wrapper {
+  max-width: 200px;
+}
+
 /*# sourceMappingURL=main.css.map */
