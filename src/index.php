@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagos Cart | Plan options</title>
+    <title>Lagoscart | Online shopping mall | Subscription plans</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./stylesheets/main.css">
     <!-- tailwind compiled css -->
@@ -38,7 +38,7 @@
                     <ul class="plan-options">
                         <li class="plan card monthly animate__animated animate__fadeInUp animate__fast">
                             <div class="icon">
-                                <img src="./assets/icons/icon-monthly.svg" alt="">
+                                <img src="./assets/icons/icon-monthly.svg" alt="Monthly Plan">
                             </div>
                             <h2 class="fs-plan-card-title fw-regular">Monthly Plan</h2>
                             <p class="fs-plan-card-tagline fw-bold text-secondary my-4">&#x20A6;20,000</p>
@@ -50,7 +50,7 @@
                         </li>
                         <li class="plan card quarterly animate__animated animate__fadeInUp animate__slow">
                             <div class="icon">
-                                <img src="./assets/icons/icon-quarterly.svg" alt="">
+                                <img src="./assets/icons/icon-quarterly.svg" alt="Quarterly Plan">
                             </div>
                             <h2 class="fs-plan-card-title fw-regular">Quarterly Plan</h2>
                             <p class="fs-plan-card-tagline fw-bold text-secondary my-4">&#x20A6;45,000</p>
@@ -66,7 +66,7 @@
                         </li>
                         <li class="plan card yearly animate__animated animate__fadeInUp animate__slower">
                             <div class="icon">
-                                <img src="./assets/icons/icon-yearly.svg" alt="">
+                                <img src="./assets/icons/icon-yearly.svg" alt="Yearly Plan">
                             </div>
                             <h2 class="fs-plan-card-title fw-regular">Yearly Plan</h2>
                             <p class="fs-plan-card-tagline fw-bold text-secondary my-4">&#x20A6;120,000</p>

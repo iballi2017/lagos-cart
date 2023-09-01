@@ -225,7 +225,8 @@ html {
   border-top-color: #efad2d;
 }
 .plan.card .icon {
-  max-width: 84px;
+  width: 84px;
+  height: 84px;
   margin: 0 auto;
   margin-top: calc(-42px - 1.19em);
   margin-bottom: 1.8em;
