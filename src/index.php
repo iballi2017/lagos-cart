@@ -18,9 +18,11 @@
     <div class="subscription-plans">
         <header class="my-4">
             <div class="wrapper">
-                <div class="logo-wrapper mx-auto">
-                    <img src="./assets/images/brand-logo.svg" alt="">
-                </div>
+                <a href="https://lagoscart.com/">
+                    <div class="logo-wrapper mx-auto">
+                        <img src="./assets/images/brand-logo.svg" alt="">
+                    </div>
+                </a>
             </div>
         </header>
 
