@@ -67,6 +67,10 @@
   max-width: 500px;
   padding: 1.5em;
 
+  p {
+    line-height: 25px;
+  }
+
   &.successful,
   &.failed {
     .failed-icon {
@@ -90,9 +94,9 @@
     }
   }
 
-  &.successful {
-  }
-
-  &.failed {
+  @include mixins.maxmq(50em) {
+    p {
+      line-height: 20px;
+    }
   }
 }

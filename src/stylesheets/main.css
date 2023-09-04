@@ -301,6 +301,9 @@ html {
   max-width: 500px;
   padding: 1.5em;
 }
+.payment-status-card p {
+  line-height: 25px;
+}
 .payment-status-card.successful .failed-icon, .payment-status-card.failed .failed-icon {
   max-width: 5rem;
   margin: 0 auto;
@@ -319,6 +322,12 @@ html {
   height: 10px;
   margin-left: 0.7em;
 }
+@media (max-width: 50em) {
+  .payment-status-card p {
+    line-height: 20px;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   padding-right: 15px;
