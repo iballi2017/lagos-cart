@@ -13,7 +13,7 @@ module.exports = {
       // Configure your color palette here
       // transparent: 'transparent',
       // current: 'currentColor',
-      // 'white': '#ffffff',
+      'white': '#ffffff',
       // 'primary': '#FFBB37',
       // 'dark': '#333333 !important',
     },

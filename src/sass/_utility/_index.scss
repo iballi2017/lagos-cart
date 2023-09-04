@@ -14,8 +14,37 @@
 .text-secondary {
     color: var(--color-secondary);
 }
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-blue-link{
+    color: var(--color-blue-link);
+}
+
+.text-success{
+    color: var(--color-success);
+}
+
 .bg-secondary {
     background-color: var(--color-secondary);
+}
+
+.bg-danger {
+    background-color: var(--color-danger);
+}
+
+.bg-blue-link{
+    background-color: var(--color-blue-link);
+}
+
+.bg-success{
+    background-color: var(--color-success);
+}
+
+.fs-hero-title {
+    font-size: var(--fs-hero-title);
 }
 
 .fs-plan-card-title {
@@ -24,6 +53,14 @@
 
 .fs-plan-card-tagline {
     font-size: var(--fs-plan-card-tagline);
+}
+
+.fs-50 {
+    font-size: var(--fs-50);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
 }
 
 .fw-bold {
@@ -47,10 +84,6 @@
 
 .text-underline {
     text-decoration: underline;
-}
-
-.fs-hero-title {
-    font-size: var(--fs-hero-title);
 }
 
 .lh-200 {

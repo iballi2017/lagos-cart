@@ -4,7 +4,11 @@
   --color-secondary: #3a8c13;
   --color-text: #333333;
   --color-white: #ffffff;
-
+  --color-danger: #dc3545;
+  --color-blue-link: #0d6efd;
+  --color-success: #198754;
+  
+  
   /* TYPOGRAPHY */
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
   --ff-primary: "Poppins", sans-serif;
@@ -16,6 +20,7 @@
   --fs-plan-card-title: 1.25rem; //20px;
   --fs-plan-card-tagline: 1.5rem; //24px;
   --fs-50: 0.88rem; //14px;
+  --fs-300: 1.88rem; //30px;
 
   /* SIZES */
   --size-50: 1.88em; //30px;
@@ -36,10 +41,11 @@
 @media (max-width: 50em) {
   :root {
     /* TYPOGRAPHY */
+  --fs-300: 1.56rem; //25px;
 
     /* SIZES */
-  --fs-hero-title: 1.56rem; //25px;
-  line-height: 35px;
+    --fs-hero-title: 1.56rem; //25px;
+    line-height: 35px;
 
     --size-50: 1em; //16px;
     --size-100: 1.38em; //22px;
