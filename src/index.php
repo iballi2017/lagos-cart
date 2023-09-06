@@ -49,7 +49,7 @@
                                 <li>Unlock endless possibilities with unlimited deliveries</li>
                                 <li>Complimentary health check-up at Mainland Clinics</li>
                             </ul>
-                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md">Buy Plan</button>
+                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md" data-bs-target="#monthlyPlanModal" aria-controls="monthlyPlanModal">Buy Plan</button>
                         </li>
                         <li class="plan card quarterly animate__animated animate__fadeInUp animate__slow">
                             <div class="icon">
@@ -62,7 +62,7 @@
                                 <li>Complimentary health check-up at Mainland Clinics</li>
                                 <li>Solar audit for your home or office by Mainland Solar</li>
                             </ul>
-                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md">Buy Plan</button>
+                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md" data-bs-target="#quarterlyPlanModal" aria-controls="yearlyPlanModal">Buy Plan</button>
                             <!-- <button class="py-2 px-4 bg-primary text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
                                 Buy Plan
                             </button> -->
@@ -79,16 +79,33 @@
                                 <li>Solar audit for your home or office by Mainland Solar</li>
                                 <li>3 hour use of a VanLagos cargo or passenger can (within Lagos only)</li>
                             </ul>
-                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md">Buy Plan</button>
+                            <button class="w-full py-2 md:py-4 px-4 btn bg-primary text-white rounded-lg hover:shadow-md" data-bs-target="#yearlyPlanModal" aria-controls="yearlyPlanModal">Buy Plan</button>
                         </li>
                     </ul>
                 </div>
+            </section>
+
+            <section>
+                <!-- Monthly Plan Modal Dialog -->
+                <?php include_once("./components/monthly-plan-modal-dialog.php") ?>
+
+                <!-- Quarterly Plan Modal Dialog -->
+                <?php include_once("./components/quarterly-plan-modal-dialog.php") ?>
+
+                <!-- Yearly Plan Modal Dialog -->
+                <?php include_once("./components/yearly-plan-modal-dialog.php") ?>
+
+                <!-- Overlay -->
+                <div class="overlay"></div>
             </section>
 
             <aside class="px-4 sm:px-0">Don't miss out on these extraordinary benefits. Join Prime today and redefine your shopping journey!</aside>
             <div class="vertical-spacer"></div>
         </main>
     </div>
+
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
