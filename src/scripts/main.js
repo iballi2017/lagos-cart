@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
     }
 
-    overlay?.addEventListener("click", () => {
-        for (let j = 0; j < planOptionModals.length; j++) {
-            planOptionModals[j].classList.remove("show")
-            overlay.classList.contains("show") ? overlay.classList.remove("show") : null;
-        }
-    });
+    // overlay?.addEventListener("click", () => {
+    //     for (let j = 0; j < planOptionModals.length; j++) {
+    //         planOptionModals[j].classList.remove("show")
+    //         overlay.classList.contains("show") ? overlay.classList.remove("show") : null;
+    //     }
+    // });
 
     for (let index = 0; index < closeBtns.length; index++) {
         const btn = closeBtns[index];
